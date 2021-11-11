@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+
+.users-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 20px;
+  /* padding-top: 15px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .user-item {
+  width: 100%;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 15px rgb(24, 128, 226);
+  background-color: rgb(255, 251, 0);
+  transition: all 0.3s ease;
+  border-radius: 3px;
+} */
+
+.avatar {
+  display: block;
+  width: 36px;
+  height: 30px;
+  background-color: rgb(14, 211, 211);
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 100%;
+  cursor: pointer;
+  color: rgb(14, 14, 14);
 }
+
+.avatar:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(97, 97, 97);
+}
+
+.user-username {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.user-email {
+  display: block;
+  color: rgb(221, 226, 255);
+}
+
+.user-btn {
+  color: #ffffff;
+  background-color: rgb(44, 182, 67);
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.user-btn:hover {
+  background-color: rgb(24, 136, 43);
+}
+
+.post-item {
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  box-shadow: 5px 5px 15px rgb(226, 172, 24);
+  background-color: rgb(255, 208, 0);
+
+}
+
+.comment-item {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 3px;
+  border: 1px solid rgb(226, 172, 24);
+  background-color: rgb(224, 131, 24);
+  box-shadow: 5px 5px 15px rgb(226, 172, 24);
+
+}
+
+.post-name {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.post-body {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post-btn {
+  color: #ffffff;
+  background-color: rgb(30, 193, 214);
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.post-btn:hover {
+  background-color: rgb(7, 151, 170);
+}
+
+.post-btn:active {
+  border: 2px solid #333;
+}
+
+
+.commnet-name {
+  font-size: 18px;
+}
+
+.commnet-text {
+  font-size: 18px;
+}
+
+.light {
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 15px rgb(24, 128, 226);
+  color: #000000;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  background-color: rgb(208, 228, 245);
+}
+
+.dark {
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 15px rgb(24, 128, 226);
+  background-color: rgb(133, 132, 114);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+.theme {
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  font-size: 19px;
+  margin-top: 50px;
+  margin-left: auto;
+  background-color: #333;
+  color: #ffffff;
+  right: 50px;
+}
+
